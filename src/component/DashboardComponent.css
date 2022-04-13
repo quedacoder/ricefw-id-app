@@ -1,0 +1,30 @@
+.dashboard {
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    color: #0d2353;
+}
+
+.header-spacing {
+    margin: 2% 0;
+}
+
+hr {
+    margin: 1% 10%;
+}
+
+.dashboard-btn {
+    background-color: #0d2353;
+    color: white;
+    height: 100%;
+    border-color: #0d2353;
+}
+
+.dashboard-btn:hover {
+    background-color: white;
+    border-color: #0d2353;
+    color: #0d2353;
+}
