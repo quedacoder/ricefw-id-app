@@ -10,16 +10,9 @@ class DomesticReportComponent extends Component {
 
         // method binding to this
         this.tempNavBack = this.tempNavBack.bind(this)
-        //this.refreshRicefwData = this.refreshRicefwData.bind(this)
-        //this.loadTable = this.loadTable.bind(this)
-        this.state = {
-            ricefw: []
-        }
     }
 
     render() {
-
-        
         return (
             <div>
                 <h1>RICEFW Id Report</h1>
