@@ -18,7 +18,7 @@ class DomesticReportComponent extends Component {
                 <h1>RICEFW Id Report</h1>
                 <button onClick={this.tempNavBack}>Back</button>
                 <div>
-                    <TableContainer />
+                    <TableContainer myProps={this.props}/>
                 </div>
             </div>
         )
@@ -29,7 +29,7 @@ class DomesticReportComponent extends Component {
     }
 }
 
-function TableContainer() {
+function TableContainer(myProps) {
     const [domesticRicefwIds, setDomesticRicefwIds] = useState([]);
     const [loading, setLoading] = useState(false);
 
@@ -81,16 +81,12 @@ function TableContainer() {
     return (
         <div>
             {loading && <span>Please wait we are fetching data</span>}
-            <Table columns={columns} data={domesticRicefwIds} />
+            <Table columns={columns} data={domesticRicefwIds} myProps={myProps}/>
         </div>
     )
 }
 
-
-
-
-
-const Table = ({ columns, data }) => {
+const Table = ({ columns, data, myProps}) => {
   const {
     getTableProps,
     getTableBodyProps,
@@ -116,6 +112,11 @@ const Table = ({ columns, data }) => {
     usePagination
   );
 
+  function youClickedMe(row, m) {
+      console.log("clicked")
+      m.myProps.navigate(`/ricefw/domestic/edit/${row.values.ricefwId}`, {name: 'Leon Smith'})
+  } 
+
   return (
       <>
         <table {...getTableProps()} className="table table-bordered">
@@ -134,7 +135,9 @@ const Table = ({ columns, data }) => {
                 {page.map((row, i) => {
                 prepareRow(row);
                 return (
-                    <tr {...row.getRowProps()}>
+                    <tr {...row.getRowProps({
+                        onClick: () => { youClickedMe(row, myProps) }
+                    })}>
                     {row.cells.map(cell => {
                         return <td {...cell.getCellProps()}>{cell.render("Cell")}</td>;
                     })}
