@@ -5,7 +5,6 @@ class DomesticItemEdit extends Component {
  constructor(props) {
         super(props)
 
-        console.log(props)
     }
 
 
