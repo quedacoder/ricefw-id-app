@@ -1,0 +1,24 @@
+.edit-form-bg {
+    background-color: white;
+    color: #0d2353;
+    height: 100%;
+    top: 0px;
+}
+
+.edit-domestic-header {
+    margin: 2.5% 0;
+    padding-top: 2.5%;
+}
+
+.hr-line-spacing {
+    margin: 2.5% 10%;
+}
+
+.input-spacing {
+    margin: 1.5% 0%;
+}
+
+.btn-spacing {
+    margin-top: 1%;
+    margin-bottom: 2%;
+}

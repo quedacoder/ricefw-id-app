@@ -41,6 +41,7 @@ class DomesticReportBoot extends Component {
         return (
             <div className="container">
                 <div className="domestic-report-header">
+                    <button onClick={() => this.props.navigate("/ricefw/dashboard")}>Back</button>
                     <h1>RICEFW ID Report</h1>
                     <hr />
                 </div>
