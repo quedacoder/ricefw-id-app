@@ -22,6 +22,14 @@ class RicefwService {
             data: ricefwItem,
         });
     }
+
+    createRicefwItem(ricefwItem) {
+        return axios({
+            method: "post",
+            url: `http://localhost:8080/ricefw/api/domestic/masters`,
+            data: ricefwItem,
+        });
+    }
 }
 
 export default new RicefwService();

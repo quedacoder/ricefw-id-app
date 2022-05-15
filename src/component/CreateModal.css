@@ -1,0 +1,72 @@
+.edit-form-bg {
+    background-color: white;
+    color: #0d2353;
+    height: 100%;
+    top: 0px;
+}
+
+.edit-domestic-header {
+    margin: 2.5% 0;
+    padding-top: 2.5%;
+}
+
+.hr-line-spacing {
+    margin: 2.5% 10%;
+}
+
+.input-spacing {
+    margin: 1.5% 0%;
+}
+
+.btn-spacing {
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+.error {
+    font-size: small;
+    color: red;
+}
+
+.create-modal-header {
+    background-color: #0d2353;
+    color: white;
+    height: 125px;
+}
+
+.h1-align {
+    text-align: center;
+    width: 100%;
+}
+
+.btn-close {
+    background-color: white;
+}
+
+.create-modal {
+    color: #0d2353;
+}
+
+.save-btn {
+    color: white;
+    background-color: #0d2353;
+    border-color: #0d2353;
+}
+
+.save-btn:hover {
+    background-color: white;
+    border-color: #0d2353;
+    color: #0d2353;
+}
+
+.cancel-btn:hover {
+    background-color: white;
+    border-color: red;
+    color: red;
+}
+
+.cancel-btn {
+    background-color: red;
+    border-color: red;
+    color: white;
+}
